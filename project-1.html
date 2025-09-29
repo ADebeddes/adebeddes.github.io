@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tachyon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site">
+  <header>
+    <a href="index.html" class="btn-primary">← Retour</a>
+    <div class="brand">
+<div>
+</div>
+</div>
+<nav aria-label="Navigation principale">
+<a href="index.html#about">À propos</a>
+<a href="index.html#projects">Projets</a>
+<a href="project-1.html">FR</a> | <a href="project-1-en.html">EN</a>
+<a class="btn-primary" href="index.html#contact">Me contacter</a>
+</nav>
+  </header>
+
+  <main class="card">
+    <h1>Tachyon</h1>
+    <div class="space"></div>
+    <h2>Technologies utilisées</h2>
+    <ul>
+      <li>Unreal Engine 4</li>
+      <li>C++</li>
+      <li>UI/UX</li>
+      <li>C#</li>
+      <li>Docker</li>
+      <li>AWS</li>
+    </ul>
+    <img src="img/tachyon.png" alt="Projet A" style="display: block;margin-left: auto;margin-right: auto;width:70%;border-radius:12px">
+    <div class="space"></div>
+    <div class="space"></div>
+    <div class="space"></div>
+    <h3>Contexte</h3>
+    <p class="muted">Tachyon est un jeu multijoueur en 3D réalisé dans le cadre du projet de fin d'études du DDJV, la formation en développement du jeu vidéo offerte 
+      a l'université de Sherbrooke.
+    <br>Dans ce jeu, les joueurs évoluent ensemble dans l'espace afin de détruire ensemble une menace galactique. Dans leurs périples,
+     les joueurs rencontrent moult obstacle tels que des vaisseaux et des créatures qui souhaitent les empêcher de mener à bien leur mission.
+      Le jeu est inspiré de FTL et de Barautrauma.
+    <br>Nous avons réalisé ce jeu avec une équipe de 5 étudiants dans un délai de 6 mois dans lequel nous avons appris à maîtriser
+     l'Unreal Engine ainsi que diverses technologies notamment le Gameplay Ability System (GAS) afin d'offrir une expérience intéressante aux joueurs.
+    <br>Dans ce projet, ma contribution a été principalement sur la gestion de l'UI/UX, la gestion des statistiques de jeu en parallèles de certains éléments de gameplay.</p>
+    <h3>UI/UX</h3>
+    <p class="muted">Notre objectif avec Tachyon étant donné que notre jeu est dans un contexte spatial étais de créer une expérience la plus immersive possible. 
+      Ceci a donc représenté un défi important pour l'UI. Un bon exemple est la gestion des munitions. L'approche classique est de mettre un compteur de munition 
+      fréquemment en bas à gauche de l'écran afin que le joueur puisse savoir combien de munition, il lui reste. Pour Tachyon, nous avons pris la décision de l'afficher 
+      comme un hologramme au-dessus de l'arme, car étant donné le contexte futuriste, il est imaginable que nos personnages aient une technologie qui sache en temps réel combien de munition,
+       il reste dans notre arme. De cette manière, on accentue le réalisme de notre univers ce qui permet une meilleure immersion de notre joueur dans le jeu.</p>
+    <img src="img/tachyon-armes.png" alt="Projet A" style="display: block;margin-left: auto;margin-right: auto;width:50%;border-radius:12px">
+    <h3>Leaderboard</h3>
+    <p class="muted">Dans Tachyon, nous avons mis en place un classement qui met en avant les joueurs qui ont réussi avec la menace le plus rapidement possible. Celui-ci récupère le nom des membres de l'équipage ainsi que le temps qu'ils ont mis a sauver l'univers. Pour cela, nous avons utilisé un serveur AWS qui nous permet de recevoir et de stocker les temps réalisés par nos joueurs et de les afficher dans le classement.</p>
+    <img src="img/tachyon-leaderboard.png" alt="Projet A" style="display: block;margin-left: auto;margin-right: auto;width:70%;border-radius:12px">
+    </main>
+
+  <footer>
+    © <span id="year"></span> Alexandre Debeddes — Tachyon
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

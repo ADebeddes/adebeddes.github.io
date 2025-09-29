@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Boules et Billes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site">
+  <header>
+    <a href="en.html" class="btn-primary">← Back</a>
+    <div class="brand">
+<div>
+</div>
+</div>
+<nav aria-label="Navigation principale">
+    <a href="en.html#about">About me</a>
+    <a href="en.html#projects">Projects</a>
+    <a href="project-2.html">FR</a> | <a href="project-2-en.html">EN</a>
+    <a class="btn-primary" href="en.html#contact">Contact</a>
+  </nav>
+  </header>
+
+  <main class="card">
+    <h1>Boules et Billes</h1>
+    <div class="space"></div>
+    <h2>Tech Stack</h2>
+    <ul>
+      <li>C++</li>
+      <li>DirectX11</li>
+      <li>PhysX</li>
+    </ul>
+    <img src="img/BouleEtBilles.png" alt="Projet A" style="display: block;margin-left: auto;margin-right: auto;width:70%;border-radius:12px">
+    <div class="space"></div>
+    <div class="space"></div>
+    <div class="space"></div>
+    <p class="muted">Boules et Billes is a 3D racing game created as part of the project for the autumn session of the DDJV, the video game development training offered 
+      at the University of Sherbrooke.
+    <br>This game consists of a snowball that must reach the finish line located at the bottom of the field. To do this, the player must stay as much as possible on the field to gain in size and speed. Obstacles and bonuses are scattered across the field in order to influence the game.
+    <br>We created this game with a team of 4 students within 3 months in which we created a custom 3D engine under directX11 using the NVIDIA PhysX library.</p>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Alexandre Debeddes — Boules et Billes
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

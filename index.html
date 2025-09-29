@@ -1,17 +1,138 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Main Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Alexandre Debeddes — Portfolio</title>
+  <meta name="description" content="Portfolio — projets, about, contact">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-        <h1>Bienvenue sur mon portfolio</h1>
-        <h2>Celui ci est en construction. N'hesitez pas a revenir plus tard pour voir son avancement</h2>
-        <a href="./about.html"><h2>Cliquez ici pour revenir au menu principal</h2></a>
+  
+<div class="site">
+
+<header>
+  <div class="brand">
+    <div>
+      <div style="font-weight:700">Alexandre Debeddes</div>
+      <div class="muted" style="font-size:0.85rem">Développeur jeux vidéo</div>
     </div>
+  </div>
+  <nav aria-label="Navigation principale">
+    <a href="#about">À propos</a>
+    <a href="#projects">Projets</a>
+    <a href="index.html">FR</a> | <a href="en.html">EN</a>
+    <a class="btn-primary" href="#contact">Me contacter</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="presentation">
+  <div class="presentation-left">
+    <h1>Bonjour — je suis <span style="color:var(--accent)">Alexandre Debeddes</span></h1>
+    <div class="cta-row">
+      <a class="btn-primary" href="#projects">Voir mes projets</a>
+      <div class="space"></div>
+      <a class="btn-primary" href="CV_Alexandre_Debeddes.pdf" download >Télécharger CV</a>
+    </div>
+    <div class="space"></div>
+    <div class="space"></div>
+    <div class="card">
+      <strong>Statut</strong>
+      <div class="muted">FQA testeur à Side Montréal - ouvert aux propositions</div>
+    </div>
+    </div>
+</section>
+
+
+<section id="about" class="card">
+  <h2>À propos</h2>
+  <p class="muted">Ancien élève du DDJV spécialisé en programmation gameplay et UI/UX, je développe des jeux principalement avec Unreal Engine et Godot. 
+  Je cherche à contribuer à des projets où la technique rencontre la créativité pour offrir des expériences ludiques qui permettent aux joueurs d'oublier leur quotidien le temps d'une partie.
+  Si vous cherchez un programmeur en quête de défis et qui adorent apprendre de nouvelles manière de s'améliorer ; la liste des projets auxquels j'ai participé ci-dessous vous donnera une idée de mon travail et de ce que je suis capable de faire seule ou en équipe.
+  </p>
+  <div class="space"></div>
+  <div class="row">
+    <div style="flex:1">
+      <h3 style="margin:0 0 8px">Compétences principales</h3>
+      <div class="tags">
+        <span class="tag">C++</span>
+        <span class="tag">LUA</span>
+        <span class="tag">Unreal Engine 4 / 5</span>
+        <span class="tag">Python</span>
+        <span class="tag">Java</span>
+      </div>
+    </div>
+    <div style="width:320px">
+      <h3 style="margin:0 0 8px">Résaux</h3>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/alexandre-debeddes/" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://https://github.com/ADebeddes" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://https://lerapzoid.itch.io/" target="_blank">
+          <i class="fab fa-itch-io"></i>
+        </a>
+        <a href="mailto:alexandre.debeddes@gmail.com">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projets</h2>
+  <div class="projects-grid">
+    <article class="project card" role="button" tabindex="0" onclick="location.href='project-1.html'">
+      <div class="thumb">
+        <img src="img/tachyon.png" alt="miniature" style="width:100%;height:100%;object-fit:cover">
+      </div>
+      <div class="info">
+        <h3>Tachyon</h3>
+        <p class="muted">Jeu multijoueur 3D inspiré par FTL et Barautrauma réalisé dans le cadre du DDJV</p>
+        <div class="tags"><span class="tag">Unreal Engine 4</span><span class="tag">C++</span><span class="tag">UI/UX</span><span class="tag">C#</span><span class="tag">Docker</span><span class="tag">AWS</span></div>
+      </div>
+    </article>
+    <article class="project card" role="button" tabindex="0" onclick="location.href='project-2.html'">
+        <div class="thumb">
+          <img src="img/BouleEtBilles.png" alt="miniature" style="width:100%;height:100%;object-fit:cover">
+        </div>
+        <div class="info">
+          <h3>Boules et Billes</h3>
+          <p class="muted">Jeu de course multijoueur réalisé sur un engin maison dans le cadre du DDJV</p>
+          <div class="tags"><span class="tag">C++</span><span class="tag">DirectX11</span><span class="tag">PhysX</span></div>
+        </div>
+    </article>
+  </div>
+</section>
+
+
+<section id="contact" class="card">
+  <h2>Contact</h2>
+  <p class="muted">Envie d'échanger ? Envoie un message.</p>
+  <form onsubmit="return false;" style="display:grid;gap:10px;max-width:640px">
+    <input type="text" placeholder="Ton nom" required style="padding:10px;border-radius:8px;border:none;background:rgba(255,255,255,0.03);color:inherit">
+    <input type="email" placeholder="Email" required style="padding:10px;border-radius:8px;border:none;background:rgba(255,255,255,0.03);color:inherit">
+    <textarea placeholder="Ton message" rows="6" style="padding:10px;border-radius:8px;border:none;background:rgba(255,255,255,0.03);color:inherit"></textarea>
+    <div class="row"><button class="btn-primary" onclick="location.href='mailto:debeddesalex@orange.fr?subject=Contact%20depuis%20le%20portfolio'">Envoyer par email</button>
+  </form>
+</section>
+
+</main>
+
+<footer>
+© <span id="year"></span> Alexandre Debeddes
+</footer>
+</div>
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Boules et Billes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site">
+  <header>
+    <a href="index.html" class="btn-primary">← Retour</a>
+    <div class="brand">
+<div>
+</div>
+</div>
+<nav aria-label="Navigation principale">
+<a href="index.html#about">À propos</a>
+<a href="index.html#projects">Projets</a>
+<a href="index.html">FR</a> | <a href="en.html">EN</a>
+<a class="btn-primary" href="index.html#contact">Me contacter</a>
+</nav>
+  </header>
+
+  <main class="card">
+    <h1>Boules et Billes</h1>
+    <div class="space"></div>
+    <h2>Technologies utilisées</h2>
+    <ul>
+      <li>C++</li>
+      <li>DirectX11</li>
+      <li>PhysX</li>
+    </ul>
+    <img src="img/BouleEtBilles.png" alt="Projet A" style="display: block;margin-left: auto;margin-right: auto;width:70%;border-radius:12px">
+    <div class="space"></div>
+    <div class="space"></div>
+    <div class="space"></div>
+    <p class="muted">Boules et Billes est un jeu de course en 3D réalisé dans le cadre du projet de la session d'automne du DDJV, la formation en développement du jeu vidéo offerte 
+      a l'université de Sherbrooke.
+    <br>Ce jeu consiste en une boule de neige qui doit atteindre la ligne d'arrivée située en bas du terrain. Pour ce faire, le joueur doit rester le plus possible sur le terrain pour gagner en taille et en vitesse. Des obstacles et des bonus sont dispersés sur le terrain afin d'influencer la partie.
+    <br>Nous avons réalisé ce jeu avec une équipe de 4 étudiants dans un délai de 3 mois dans lequel nous avons créé un moteur 3D custom sous directX11 avec l'aide de la librairie PhysX de NVIDIA.</p>
+    
+  </main>
+
+  <footer>
+    © <span id="year"></span> Alexandre Debeddes — Boules et Billes
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
