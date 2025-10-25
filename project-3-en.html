@@ -39,6 +39,12 @@
     <p class="muted">This project is part of a learning process for the Godot engine and to gradually dissociate myself from the reproduction of tutorials in order to be able to create in a broader way.
     <br>For this, I followed the video "Making a Game from Start to Finish" by youtuber Lukky, police and sounds found on Kenney and models retrieved on sketchfab (link at the end of this article).</p>
     <h3>Gameplay</h3>
+    <p class="muted">In Blackjack, the player faces the bank with grace. The player accumulates cards in order to beat the bank’s hand without exceeding 21. The values of the cards are as follows:
+    <ul>
+      <li class="muted">From 2 to 9 : card's value.</li>
+      <li class="muted">From 10 to king: 10 points.</li>
+      <li class="muted">Ace : 1 or 11 points.</li>
+    <h3>Game loop</h3>
     <p class="muted">The player decides their starting bet. The player receives a face-up card, the bank receives 1 face-up and 1 face-down card.
     <br>The player chooses whether to keep their current cards or add more. As long as the player does not exceed the score of 21, he can request a new card.
     <br>Once the player is satisfied, the bank reveals their card face down and adds new cards if their score is below 17. We then compare the hands and the player receives the chips if he has won.</p>
