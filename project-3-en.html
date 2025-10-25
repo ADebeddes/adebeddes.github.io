@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Blackjack</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site">
+  <header>
+    <a href="en.html" class="btn-primary">← Back</a>
+    <div class="brand">
+    <div></div>
+</div>
+<nav aria-label="Navigation principale">
+    <a href="en.html#about">About me</a>
+    <a href="en.html#projects">Projects</a>
+    <a href="project-3.html">FR</a> | <a href="project-3-en.html">EN</a>
+    <a class="btn-primary" href="en.html#contact">Contact</a>
+  </nav>
+  </header>
+
+  <main class="card">
+    <h1>Blackjack</h1>
+    <div class="space"></div>
+    <h2>Tech Stack</h2>
+    <ul>
+      <li>GDScript</li>
+    </ul>
+    <img src="img/Blackjack.png" alt="Projet A" style="display: block;margin-left: auto;margin-right: auto;width:70%;border-radius:12px">
+    <div class="space"></div>
+    <div class="space"></div>
+    <div class="space"></div>
+    <h3>Context</h3>
+    <p class="muted">This project is part of a learning process for the Godot engine and to gradually dissociate myself from the reproduction of tutorials in order to be able to create in a broader way.
+    <br>For this, I followed the video "Making a Game from Start to Finish" by youtuber Lukky, police and sounds found on Kenney and models retrieved on sketchfab (link at the end of this article).</p>
+    <h3>Gameplay</h3>
+    <p class="muted">The player decides their starting bet. The player receives a face-up card, the bank receives 1 face-up and 1 face-down card.
+    <br>The player chooses whether to keep their current cards or add more. As long as the player does not exceed the score of 21, he can request a new card.
+    <br>Once the player is satisfied, the bank reveals their card face down and adds new cards if their score is below 17. We then compare the hands and the player receives the chips if he has won.</p>
+    <img src="img/Blackjack1.png" alt="Projet A" style="display: block;margin-left: auto;margin-right: auto;width:50%;border-radius:12px">
+    <h3>Links</h3>
+    <ul>
+      <a href="https://lerapzoid.itch.io/blackajck" target="_blank"><li class="muted">Game on itchi.io</li></a>
+      <a href="https://www.youtube.com/@lukky." target="_blank"><li class="muted">Lukky's youtube channel</li></a>
+      <a href="https://www.kenney.nl/" target="_blank"><li class="muted">Kenney for fonts and sounds</li></a>
+      <a href="https://sketchfab.com/" target="_blank"><li class="muted">Sketchfab for models</li></a>
+    </ul>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Alexandre Debeddes — Blackjack
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

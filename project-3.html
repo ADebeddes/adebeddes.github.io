@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Blackjack</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site">
+  <header>
+    <a href="index.html" class="btn-primary">← Retour</a>
+    <div class="brand">
+<div>
+</div>
+</div>
+<nav aria-label="Navigation principale">
+<a href="index.html#about">À propos</a>
+<a href="index.html#projects">Projets</a>
+<a href="project-3.html">FR</a> | <a href="project-3-en.html">EN</a>
+<a class="btn-primary" href="index.html#contact">Me contacter</a>
+</nav>
+  </header>
+
+  <main class="card">
+    <h1>Blackjack</h1>
+    <div class="space"></div>
+    <h2>Technologies utilisées</h2>
+    <ul>
+      <li>GDScript</li>
+    </ul>
+    <img src="img/Blackjack.png" alt="Projet A" style="display: block;margin-left: auto;margin-right: auto;width:70%;border-radius:12px">
+    <div class="space"></div>
+    <div class="space"></div>
+    <div class="space"></div>
+    <h3>Contexte</h3>
+    <p class="muted">Ce projet s'inscrit dans une démarche d'apprentissage de l'engin Godot et de se dissocier progressivement de la reproduction de tutoriel afin de pouvoir créer de manière plus large.
+    <br>Pour cela, j'ai suivi la vidéo "Making a Game from Start to Finish" du youtuber Lukky, des police et son trouvé sur Kenney et de modèles récupèrent sur sketchfab (lien à la fin de cet article).</p>
+    <h3>Principe du jeu</h3>
+    <p class="muted">Au Blackjack, le joueur affronte la banque grâce. Le joueur accumule des cartes dans le but de battre la main de la banque sans dépasser 21. Les valeurs des cartes sont les suivantes :
+    <ul>
+      <li class="muted">Du 2 au 9 : la valeur de la carte.</li>
+      <li class="muted">Du 10 au roi: 10 points.</li>
+      <li class="muted">As : 1 ou 11 points.</li>
+    </ul></p>
+    <h3>Déroulé</h3>
+    <p class="muted">Le joueur décide de sa mise de départ. Le joueur reçoit de carte face visible, la banque reçoit 1 carte face visible et 1 face cachée. 
+    <br>Le joueur choisi s'il souhaite conserver ses cartes actuelles ou en rajouter. Tant que le joueur ne dépasse pas le score de 21, il peut demander une nouvelle carte.
+    <br>Une fois que le joueur est satisfait la banque révèle sa carte face cachée et ajoute de nouvelles cartes si son score est en dessous de 17. On compare ensuite les mains et le joueur reçoit les jetons s'il a gagné.</p>
+    <img src="img/Blackjack1.png" alt="Projet A" style="display: block;margin-left: auto;margin-right: auto;width:50%;border-radius:12px">
+    <h3>Liens</h3>
+    <ul>
+      <a href="https://lerapzoid.itch.io/blackajck" target="_blank"><li class="muted">Jeu sur itchi.io</li></a>
+      <a href="https://www.youtube.com/@lukky." target="_blank"><li class="muted">Chaine de Lukky</li></a>
+      <a href="https://www.kenney.nl/" target="_blank"><li class="muted">Kenney pour les polices et sons</li></a>
+      <a href="https://sketchfab.com/" target="_blank"><li class="muted">Sketchfab pour les modèles</li></a>
+    </ul>
+    </main>
+
+  <footer>
+    © <span id="year"></span> Alexandre Debeddes — Blackjack
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
