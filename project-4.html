@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Knight's Journey</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site">
+  <header>
+    <a href="index.html" class="btn-primary">← Retour</a>
+    <div class="brand">
+<div>
+</div>
+</div>
+<nav aria-label="Navigation principale">
+<a href="index.html#about">À propos</a>
+<a href="index.html#projects">Projets</a>
+<a href="project-4.html">FR</a> | <a href="project-4-en.html">EN</a>
+<a class="btn-primary" href="index.html#contact">Me contacter</a>
+</nav>
+  </header>
+
+  <main class="card">
+    <h1>Knight's Journey</h1>
+    <div class="space"></div>
+    <h2>Technologies utilisées</h2>
+    <ul>
+      <li>GDScript</li>
+    </ul>
+    <img src="img/Hero.png" alt="Projet A" style="display: block;margin-left: auto;margin-right: auto;width:70%;border-radius:12px">
+    <div class="space"></div>
+    <div class="space"></div>
+    <div class="space"></div>
+    <h3>Contexte</h3>
+    <p class="muted">Dans ma démarche d'apprentissage, je me suis renseigné sur les différents moteurs de jeu sur le marché. J'ai appris l'existence de Godot. Étant donné sa bonne réputation et son utilisation fréquente dans les gamejam je me suis lancé dans l'apprentissage de ce moteur.
+    <br>Pour cela, je me suis basé sur le travail fait dans la vidéo "How to make a Video Game - Godot Beginner Tutorial" de Brackeys (lien à la fin de l'article).
+    <br>J'ai ajouté divers éléments tels qu'un menu, une condition de victoire ainsi que des changements de la carte afin de créer un premier jeu complet.
+    <br>J'ai profité de ce jeu pour pouvoir publié mon premier jeu sur itch.io avec une version du jeu gratuite et jouable sur navigateur.</p>
+    <h3>Principe du jeu</h3>
+    <p class="muted">Le jeu est un jeu de plateforme 2D dans lequel le joueur incarne un chevalier. Ce chevalier doit récupérer les pièces éparpillées dans l'ensemble de la carte. Pour cela, le joueur devra esquiver des ennemies et réaliser des sauts précis.</p>
+    <img src="img/Hero1.png" alt="Projet A" style="display: block;margin-left: auto;margin-right: auto;width:50%;border-radius:12px">
+    <h3>Liens</h3>
+    <ul>
+      <a href="https://lerapzoid.itch.io/knights-journey" target="_blank"><li class="muted">Jeu sur itchi.io</li></a>
+      <a href="https://www.youtube.com/@Brackeys" target="_blank"><li class="muted">Chaine de Brackeys</li></a>
+    </ul>
+    </main>
+
+  <footer>
+    © <span id="year"></span> Alexandre Debeddes — Knight's Journey
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
